@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="./assets/css/style_1.css">
+</head>
+
+<body>
+    <div>
+        <div style="width: 40%;margin: 0 auto">
+            <h2>
+                Escríbenos !!!
+
+                <!-- RESULTADO en formulario enviado correctamente -->
+            </h2>
+            <div class="resultado" style="color:green;font-style: italic">
+            </div>
+            <form id="formulario">
+                <div>
+                    <div style="display: flex;flex-direction: column;">
+
+
+                        <!-- nombre -->
+                        <label for="">
+                            Nombre completo
+                        </label>
+
+                        <!-- input nombre -->
+                        <input id="nombre" type="text">
+                        <p class="errorNombre" style="color:red;font-style: italic;"></p>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+
+
+                        <!-- asunto -->
+                        <label for="">
+                            Asunto
+                        </label>
+                        <!-- input asunto-->
+                        <input id="asunto" type="text">
+                        <p class="errorAsunto" style="color:red;font-style: italic;"></p>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+
+
+                    <!-- mensaje -->
+                    <label for="">
+                        Mensaje
+                    </label>
+                    <textarea id="mensaje"></textarea>
+                    <p class="errorMensaje" style="color:red;font-style: italic;"></p>
+                </div>
+                <div>
+
+                    
+                    <!-- boton que activa la validación correcta o de error -->
+                    <button id="boton" type="submit">
+                        Envíar mensaje
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/script_1.js"></script>
+</body>
+
+</html>
